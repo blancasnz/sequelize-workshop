@@ -1,0 +1,31 @@
+{
+  "name": "sequelize",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -e html,js,css app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samsterzz/sequelize.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samsterzz/sequelize/issues"
+  },
+  "homepage": "https://github.com/samsterzz/sequelize#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.15.4",
+    "morgan": "^1.8.2",
+    "nunjucks": "^3.0.1",
+    "pg": "^6.4.1",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "4.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}

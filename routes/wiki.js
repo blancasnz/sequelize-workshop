@@ -17,6 +17,24 @@ router.get('/add', function (req, res) {
   res.render('addpage');
 });
 
+
+router.get('/:urlTitle', function (req, res, next) {
+  var theURL = req.params.urlTitle;
+  Page.findOne({
+    where: {
+      urlTitle: theURL
+    }
+  })
+    .then(function (found) {
+      console.log(found);
+      res.render('wikipage', {
+        page: found
+      });
+    })
+    .catch(next);
+});
+
+
 router.post('/', function (req, res, next) {
 
   // STUDENT ASSIGNMENT:
